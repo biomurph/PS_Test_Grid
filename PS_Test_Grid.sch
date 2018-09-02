@@ -559,35 +559,24 @@ $EndComp
 $Comp
 L R R?
 U 1 1 5B8B051B
-P 4650 2100
-F 0 "R?" H 4550 1950 50  0000 C CNN
-F 1 "R" H 4700 1950 50  0000 C CNN
-F 2 "" V 4580 2100 50  0001 C CNN
-F 3 "" H 4650 2100 50  0001 C CNN
-	1    4650 2100
+P 4250 2150
+F 0 "R?" H 4150 2000 50  0000 C CNN
+F 1 "R" H 4300 2000 50  0000 C CNN
+F 2 "" V 4180 2150 50  0001 C CNN
+F 3 "" H 4250 2150 50  0001 C CNN
+	1    4250 2150
 	1    0    0    -1  
 $EndComp
 $Comp
 L R R?
 U 1 1 5B8B059B
-P 4650 3150
-F 0 "R?" H 4550 3000 50  0000 C CNN
-F 1 "R" H 4700 3000 50  0000 C CNN
-F 2 "" V 4580 3150 50  0001 C CNN
-F 3 "" H 4650 3150 50  0001 C CNN
-	1    4650 3150
+P 4250 3000
+F 0 "R?" H 4150 2850 50  0000 C CNN
+F 1 "R" H 4300 2850 50  0000 C CNN
+F 2 "" V 4180 3000 50  0001 C CNN
+F 3 "" H 4250 3000 50  0001 C CNN
+	1    4250 3000
 	1    0    0    -1  
-$EndComp
-$Comp
-L R R?
-U 1 1 5B8B0696
-P 4350 2950
-F 0 "R?" V 4250 2900 50  0000 C CNN
-F 1 "R" V 4450 2900 50  0000 C CNN
-F 2 "" V 4280 2950 50  0001 C CNN
-F 3 "" H 4350 2950 50  0001 C CNN
-	1    4350 2950
-	0    1    1    0   
 $EndComp
 $Comp
 L C C?
@@ -713,40 +702,16 @@ $EndComp
 Wire Wire Line
 	2750 3350 2750 2800
 Wire Wire Line
-	1800 3350 2000 3350
+	1800 3350 5550 3350
 Wire Wire Line
-	2000 3350 2150 3350
-Wire Wire Line
-	2150 3350 2750 3350
-Wire Wire Line
-	2750 3350 3300 3350
-Wire Wire Line
-	3300 3350 3650 3350
-Wire Wire Line
-	3650 3350 4650 3350
-Wire Wire Line
-	4650 3350 5550 3350
-Wire Wire Line
-	3650 2950 3650 3350
-Wire Wire Line
-	3650 3350 3650 3650
+	3650 2950 3650 3650
 Wire Wire Line
 	5550 3350 5550 2900
 Connection ~ 3650 3350
 Wire Wire Line
 	2750 1900 2750 2200
 Wire Wire Line
-	1800 1900 2100 1900
-Wire Wire Line
-	2100 1900 2300 1900
-Wire Wire Line
-	2300 1900 2750 1900
-Wire Wire Line
-	2750 1900 3550 1900
-Wire Wire Line
-	3550 1900 4650 1900
-Wire Wire Line
-	4650 1900 5550 1900
+	1800 1900 5550 1900
 Wire Wire Line
 	3550 1900 3550 1600
 Wire Wire Line
@@ -761,11 +726,7 @@ Wire Wire Line
 	1800 2900 1800 3350
 Connection ~ 2750 3350
 Wire Wire Line
-	3100 2500 3300 2500
-Wire Wire Line
-	3300 2500 3650 2500
-Wire Wire Line
-	3650 2500 3750 2500
+	3100 2500 3750 2500
 Wire Wire Line
 	3300 2500 3300 2650
 Wire Wire Line
@@ -776,29 +737,16 @@ Wire Wire Line
 	3650 2650 3650 2500
 Connection ~ 3650 2500
 Wire Wire Line
-	4650 1950 4650 1900
-Connection ~ 4650 1900
+	4250 2000 4250 1900
+Connection ~ 4250 1900
 Wire Wire Line
-	4650 2250 4650 2950
+	4250 2300 4250 2850
 Wire Wire Line
-	4650 2950 4650 3000
+	4250 3150 4250 3350
+Connection ~ 4250 3350
+Connection ~ 4250 2500
 Wire Wire Line
-	4650 3300 4650 3350
-Connection ~ 4650 3350
-Wire Wire Line
-	4500 2950 4650 2950
-Wire Wire Line
-	4650 2950 4800 2950
-Connection ~ 4650 2950
-Wire Wire Line
-	4200 2950 4150 2950
-Wire Wire Line
-	4150 2950 4150 2500
-Wire Wire Line
-	4050 2500 4150 2500
-Wire Wire Line
-	4150 2500 5350 2500
-Connection ~ 4150 2500
+	4050 2500 5350 2500
 Wire Wire Line
 	5950 2600 6250 2600
 Wire Wire Line
@@ -810,9 +758,7 @@ Wire Wire Line
 Wire Wire Line
 	5300 2700 5300 2950
 Wire Wire Line
-	5100 2950 5300 2950
-Wire Wire Line
-	5300 2950 5800 2950
+	5100 2950 5800 2950
 Connection ~ 5300 2950
 Wire Wire Line
 	2300 2000 2300 1900
@@ -827,18 +773,14 @@ Wire Wire Line
 	2150 2900 2150 3350
 Connection ~ 2150 3350
 Wire Wire Line
-	2150 2500 2300 2500
-Wire Wire Line
-	2300 2500 2400 2500
+	2150 2500 2400 2500
 Wire Wire Line
 	2150 2500 2150 2600
 Wire Wire Line
 	2300 2300 2300 2500
 Connection ~ 2300 2500
 Wire Wire Line
-	2000 2400 2100 2400
-Wire Wire Line
-	2100 2400 2400 2400
+	2000 2400 2400 2400
 Wire Wire Line
 	2000 2400 2000 2600
 Wire Wire Line
@@ -847,34 +789,18 @@ Connection ~ 2100 2400
 Wire Wire Line
 	12850 1800 12850 2250
 Wire Wire Line
-	9100 1800 9750 1800
-Wire Wire Line
-	9750 1800 10850 1800
-Wire Wire Line
-	10850 1800 12050 1800
-Wire Wire Line
-	12050 1800 12850 1800
+	9100 1800 12850 1800
 Wire Wire Line
 	10850 1800 10850 1750
 Wire Wire Line
 	12050 2000 12050 1800
 Connection ~ 12050 1800
 Wire Wire Line
-	12050 2300 12050 3000
-Wire Wire Line
-	12050 3000 12050 3150
+	12050 2300 12050 3150
 Wire Wire Line
 	10150 3100 10150 3550
 Wire Wire Line
-	9100 3550 10150 3550
-Wire Wire Line
-	10150 3550 10400 3550
-Wire Wire Line
-	10400 3550 10950 3550
-Wire Wire Line
-	10950 3550 12050 3550
-Wire Wire Line
-	12050 3550 12850 3550
+	9100 3550 12850 3550
 Wire Wire Line
 	10950 3550 10950 3650
 Wire Wire Line
@@ -884,11 +810,7 @@ Wire Wire Line
 	10400 3100 10400 3550
 Connection ~ 10400 3550
 Wire Wire Line
-	9750 2700 10150 2700
-Wire Wire Line
-	10150 2700 10400 2700
-Wire Wire Line
-	10400 2700 10750 2700
+	9750 2700 10750 2700
 Wire Wire Line
 	10400 2700 10400 2800
 Wire Wire Line
@@ -911,19 +833,13 @@ Connection ~ 10150 3550
 Wire Wire Line
 	11300 3000 11500 3000
 Wire Wire Line
-	11300 2500 11300 2700
-Wire Wire Line
-	11300 2700 11300 3000
+	11300 2500 11300 3000
 Connection ~ 11300 2700
 Wire Wire Line
-	11800 3000 12050 3000
-Wire Wire Line
-	12050 3000 12250 3000
+	11800 3000 12250 3000
 Connection ~ 12050 3000
 Wire Wire Line
-	12550 3000 12600 3000
-Wire Wire Line
-	12600 3000 13050 3000
+	12550 3000 13050 3000
 Wire Wire Line
 	13350 3000 13500 3000
 Wire Wire Line
@@ -942,4 +858,26 @@ Wire Wire Line
 Wire Wire Line
 	12600 2700 12600 3000
 Connection ~ 12600 3000
+Text Notes 3650 1850 0    60   ~ 0
+V divider resistors appear in parallel to the input\n100K = 50K\nUsing 220K and 2.2uF cuts off at .66Hz
+$Comp
+L C C?
+U 1 1 5B8B4AAD
+P 4600 3150
+F 0 "C?" H 4625 3250 50  0000 L CNN
+F 1 "C" H 4625 3050 50  0000 L CNN
+F 2 "" H 4638 3000 50  0001 C CNN
+F 3 "" H 4600 3150 50  0001 C CNN
+	1    4600 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 2950 4600 2950
+Wire Wire Line
+	4600 2950 4600 3000
+Wire Wire Line
+	4600 3300 4600 3350
+Connection ~ 4600 3350
+Text Notes 3700 3600 0    60   ~ 0
+Capacitor needs to have Z equivalent to Resistor at lowest allowed frequency.\nFor f of 1Hz, a 4.7uF cap will have 33K of Z
 $EndSCHEMATC

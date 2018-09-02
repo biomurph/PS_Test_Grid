@@ -55,7 +55,7 @@ F 3 "" H 9650 2400 60  0000 C CNN
 	1    9650 2400
 	1    0    0    -1  
 $EndComp
-Text Notes 9850 2650 0    60   ~ 0
+Text Notes 9850 2550 0    60   ~ 0
 EAALSTIC1708A0\n
 $Comp
 L NOA1212 U?
