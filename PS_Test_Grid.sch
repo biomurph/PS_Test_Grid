@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:PS_Test_Grid-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -113,7 +114,7 @@ F 3 "" H 7550 7100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MCP6001R U2
+L MCP6001R-RESCUE-PS_Test_Grid U2
 U 1 1 5B8AF47D
 P 10950 2800
 F 0 "U2" H 11000 3000 50  0000 C CNN
@@ -146,7 +147,7 @@ F 3 "" H 8050 3850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D2
+L LED-RESCUE-PS_Test_Grid D2
 U 1 1 5B8AFAB0
 P 6250 6650
 F 0 "D2" H 6250 6750 50  0000 C CNN
@@ -168,7 +169,7 @@ F 3 "" H 6250 7100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D1
+L LED-RESCUE-PS_Test_Grid D1
 U 1 1 5B8AFC0D
 P 6050 2450
 F 0 "D1" H 6050 2550 50  0000 C CNN
@@ -194,7 +195,7 @@ L R R11
 U 1 1 5B8B02F8
 P 11150 3150
 F 0 "R11" V 11050 3100 50  0000 C CNN
-F 1 "R" V 11250 3100 50  0000 C CNN
+F 1 "330K" V 11250 3100 50  0000 C CNN
 F 2 "Capacitors_SMD:C_0603" V 11080 3150 50  0001 C CNN
 F 3 "" H 11150 3150 50  0001 C CNN
 	1    11150 3150
@@ -215,8 +216,8 @@ $Comp
 L R R3
 U 1 1 5B8B051B
 P 9150 2600
-F 0 "R3" H 9050 2450 50  0000 C CNN
-F 1 "R" H 9200 2450 50  0000 C CNN
+F 0 "R3" H 9050 2600 50  0000 C CNN
+F 1 "220K" H 9300 2600 50  0000 C CNN
 F 2 "Capacitors_SMD:C_0603" V 9080 2600 50  0001 C CNN
 F 3 "" H 9150 2600 50  0001 C CNN
 	1    9150 2600
@@ -226,8 +227,8 @@ $Comp
 L R R9
 U 1 1 5B8B059B
 P 9150 3200
-F 0 "R9" H 9050 3050 50  0000 C CNN
-F 1 "R" H 9200 3050 50  0000 C CNN
+F 0 "R9" H 9050 3200 50  0000 C CNN
+F 1 "220K" H 9300 3200 50  0000 C CNN
 F 2 "Capacitors_SMD:C_0603" V 9080 3200 50  0001 C CNN
 F 3 "" H 9150 3200 50  0001 C CNN
 	1    9150 3200
@@ -414,7 +415,7 @@ Wire Wire Line
 	6250 7700 6250 7250
 Connection ~ 7300 7700
 Text Notes 8050 2050 0    60   ~ 0
-V divider resistors appear in parallel to the input\n100K = 50K\nUsing 220K and 2.2uF cuts off at .66Hz
+V divider resistors appear in parallel to the input\nX = R3/2
 $Comp
 L C C7
 U 1 1 5B8B4AAD
@@ -433,17 +434,17 @@ Wire Wire Line
 Wire Wire Line
 	10050 3550 10050 3500
 Connection ~ 10050 3550
-Text Notes 8600 3800 0    60   ~ 0
-C7 needs to have Z equivalent to R10 at lowest allowed frequency.\nFor f of 1Hz, a 4.7uF cap will have 33K of Z
-Text Notes 5900 4450 0    60   ~ 0
-Still working on this with help\nhttps://www.radio-electronics.com/info/circuits/opamp_non_inverting/op_amp_non-inverting.php\nhttps://www.ieee.li/pdf/essay/single_supply_op_amp_design.pdf\n
+Text Notes 13050 4350 0    60   ~ 0
+C7 needs to have Z equivalent to R10 at lowest allowed frequency.\nR11 should equal R4+(R3/2) to reduce input bias current erros.\nChoose bypass C6 to set CMR dropoff
+Text Notes 750  9650 0    60   ~ 0
+Still working on this with help\nhttps://www.radio-electronics.com/info/circuits/opamp_non_inverting/op_amp_non-inverting.php\nhttps://www.ieee.li/pdf/essay/single_supply_op_amp_design.pdf\nhttps://www.analog.com/en/analog-dialogue/articles/avoiding-op-amp-instability-problems.html
 NoConn ~ 6800 2850
 $Comp
 L R R4
 U 1 1 5B91C5EF
 P 9500 2900
 F 0 "R4" V 9400 2850 50  0000 C CNN
-F 1 "R" V 9600 2850 50  0000 C CNN
+F 1 "220K" V 9600 2900 50  0000 C CNN
 F 2 "Capacitors_SMD:C_0603" V 9430 2900 50  0001 C CNN
 F 3 "" H 9500 2900 50  0001 C CNN
 	1    9500 2900
@@ -553,7 +554,7 @@ Wire Wire Line
 Wire Wire Line
 	5550 6850 5550 7700
 $Comp
-L MCP6001R U3
+L MCP6001R-RESCUE-PS_Test_Grid U3
 U 1 1 5B91F924
 P 10700 6950
 F 0 "U3" H 10750 7150 50  0000 C CNN
@@ -589,8 +590,8 @@ $Comp
 L R R13
 U 1 1 5B91F936
 P 8900 6850
-F 0 "R13" H 8800 6700 50  0000 C CNN
-F 1 "R" H 8950 6700 50  0000 C CNN
+F 0 "R13" H 8750 6850 50  0000 C CNN
+F 1 "100K" H 9050 6850 50  0000 C CNN
 F 2 "Capacitors_SMD:C_0603" V 8830 6850 50  0001 C CNN
 F 3 "" H 8900 6850 50  0001 C CNN
 	1    8900 6850
@@ -600,8 +601,8 @@ $Comp
 L R R17
 U 1 1 5B91F93C
 P 8900 7400
-F 0 "R17" H 8800 7250 50  0000 C CNN
-F 1 "R" H 8950 7250 50  0000 C CNN
+F 0 "R17" H 9050 7450 50  0000 C CNN
+F 1 "100K" H 9050 7350 50  0000 C CNN
 F 2 "Capacitors_SMD:C_0603" V 8830 7400 50  0001 C CNN
 F 3 "" H 8900 7400 50  0001 C CNN
 	1    8900 7400
@@ -634,7 +635,7 @@ Wire Wire Line
 	10250 7300 10750 7300
 Connection ~ 10350 7300
 Text Notes 8400 6200 0    60   ~ 0
-V divider resistors appear in parallel to the input\n100K = 50K\nUsing 220K and 2.2uF cuts off at .66Hz
+V divider resistors appear in parallel to the input\n220K = 110K\nUsing 220K and 2.2uF cuts off at .66Hz
 $Comp
 L C C14
 U 1 1 5B91F955
@@ -653,14 +654,14 @@ Wire Wire Line
 Wire Wire Line
 	9800 7700 9800 7650
 Connection ~ 9800 7700
-Text Notes 9600 8600 0    60   ~ 0
-C14 needs to have Z equivalent to R18 at lowest allowed frequency.\nFor f of 1Hz:\n0.1uF will have 1.6M\n0.68uF will have 234K\n1uF will have 159K\n3.3uF will have 48.2K\n4.7uF cap will have 33.8K\n10uF will have 15.9K
+Text Notes 9600 8650 0    60   ~ 0
+C14 needs to have Z equivalent to R18 at lowest allowed frequency.\n\nFor f of 1Hz:\n0.1uF will have 1.6M\n0.68uF will have 234K\n1uF will have 159K\n3.3uF will have 48.2K\n4.7uF cap will have 33.8K\n10uF will have 15.9K
 $Comp
 L R R14
 U 1 1 5B91F961
 P 9250 7150
 F 0 "R14" V 9150 7100 50  0000 C CNN
-F 1 "R" V 9350 7100 50  0000 C CNN
+F 1 "100K" V 9350 7150 50  0000 C CNN
 F 2 "Capacitors_SMD:C_0603" V 9180 7150 50  0001 C CNN
 F 3 "" H 9250 7150 50  0001 C CNN
 	1    9250 7150
@@ -775,7 +776,7 @@ Wire Wire Line
 Wire Wire Line
 	13050 3000 12700 3000
 Wire Wire Line
-	12700 3550 12700 3000
+	12700 3000 12700 3550
 $Comp
 L CONN_01X01 J2
 U 1 1 5B92C96D
@@ -931,7 +932,7 @@ Text Notes 6700 2050 0    60   ~ 0
 Text Notes 5650 2050 0    60   ~ 0
 AM2520ZGC09\nGreen LED
 Wire Wire Line
-	5400 3550 12700 3550
+	12700 3550 5400 3550
 Wire Wire Line
 	10650 2700 9900 2700
 Wire Wire Line
@@ -979,4 +980,28 @@ Connection ~ 12250 3550
 Connection ~ 10600 6250
 Connection ~ 12000 7700
 Connection ~ 12000 6950
+Text Notes 11200 8650 0    60   ~ 0
+For f of 0.8Hz:\n0.1uF will have \n0.68uF will have \n1uF will have \n3.3uF will have \n4.7uF cap will have \n10uF will have 
+Text Notes 9600 8850 0    60   ~ 0
+Z = 1/2PI*f*C
+Text Notes 5450 4200 0    60   ~ 0
+BW1 = 1/2PI(R3/2)C6 = \nBW2 = 1/2PI*R4*C3 = \nBW3 = 1/2PI*R10*C7 =\n\nBW1 = 0.1*BW2  |  0.1*BW3
+Text Notes 1550 2700 0    60   ~ 0
+BW1 for C6\n0.1uF = 14.47Hz\n1uF = 1.45Hz\n2.2uF = 0.66Hz\n3.3uF = 0.44Hz\n4.7uF = 0.31Hz
+Text Notes 1400 7150 0    60   ~ 0
+BW1 AT C13\n0.1uF = 31.83Hz\n1uF = 3.18Hz\n2.2uF = 1.44Hz\n3.3uF = 0.96Hz\n4.7uF = 0.68Hz
+Text Notes 1550 4200 0    60   ~ 0
+BW2 for C3\n0.022uF = 32.88Hz\n0.033uF = 21.92Hz\n0.047uF = 15.39Hz\n0.1uF = 7.23Hz\n1uF = 0.72Hz\n2.2uF = 0.33Hz\n3.3uF = 0.22Hz\n4.7uF = 0.15Hz
+Text Notes 1550 4700 0    60   ~ 0
+BW3 = BW2
+Text Notes 8600 4250 0    60   ~ 0
+C7 Z AT 6.6Hz (BW1*10 at 2.2uF)\n0.1uF = 241K\n1uF = 24K\n2.2uF = 11K\n3.3uF = 7.3K\n4.7uF = 5K
+Text Notes 1400 8300 0    60   ~ 0
+BW2 AT C3\n0.022uF = 72Hz\n0.033uF = 48Hz\n0.047uF = 34Hz\n0.1uF = 16.9Hz\n1uF = 1.59Hz\n2.2uF = 0.72Hz\n3.3uF = 0.48Hz\n4.7uF = 0.34Hz
+Text Notes 10550 4250 0    60   ~ 0
+C7 Z AT 14.5Hz (BW1*10 @ 1uF)\n0.1uF = 110K\n1uF = 11K\n2.2uF = 5K\n3.3uF = 3.3K\n4.7uF = 2.3K
+Text Notes 9550 4450 0    60   ~ 0
+Z = 1/2PI*f*C
+Text Notes 13900 3400 0    60   ~ 0
+G = 1+R11/R10\n
 $EndSCHEMATC
