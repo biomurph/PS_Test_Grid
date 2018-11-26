@@ -999,7 +999,9 @@ C7 Z AT 6.6Hz (BW1*10 at 2.2uF)\n0.1uF = 241K\n1uF = 24K\n2.2uF = 11K\n3.3uF = 7
 Text Notes 1400 8300 0    60   ~ 0
 BW2 AT C3\n0.022uF = 72Hz\n0.033uF = 48Hz\n0.047uF = 34Hz\n0.1uF = 16.9Hz\n1uF = 1.59Hz\n2.2uF = 0.72Hz\n3.3uF = 0.48Hz\n4.7uF = 0.34Hz
 Text Notes 10550 4250 0    60   ~ 0
-C7 Z AT 14.5Hz (BW1*10 @ 1uF)\n0.1uF = 110K\n1uF = 11K\n2.2uF = 11K\n3.3uF = 5K\n4.7uF = 2.3K
+C7 Z AT 14.5Hz (BW1*10 @ 1uF)\n0.1uF = 110K\n1uF = 11K\n2.2uF = 5K\n3.3uF = 3.3K\n4.7uF = 2.3K
 Text Notes 9550 4450 0    60   ~ 0
 Z = 1/2PI*f*C
+Text Notes 13900 3400 0    60   ~ 0
+G = 1+R11/R10\n
 $EndSCHEMATC
