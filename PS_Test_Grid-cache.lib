@@ -1,11 +1,11 @@
-EESchema-LIBRARY Version 2.3
+EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# C
+# Device_C
 #
-DEF C C 0 10 N Y 1 F N
+DEF Device_C C 0 10 N Y 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "C" 25 -100 50 H V L CNN
+F1 "Device_C" 25 -100 50 H V L CNN
 F2 "" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -19,18 +19,35 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# CONN_01X01
+# Device_R
 #
-DEF CONN_01X01 J 0 40 Y N 1 F N
-F0 "J" 0 100 50 H V C CNN
-F1 "CONN_01X01" 100 0 50 V V C CNN
-F2 "" 0 0 50 H I C CNN
+DEF Device_R R 0 0 N Y 1 F N
+F0 "R" 80 0 50 V V C CNN
+F1 "Device_R" 0 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
- Pin_Header_Straight_1X*
- Pin_Header_Angled_1X*
- Socket_Strip_Straight_1X*
- Socket_Strip_Angled_1X*
+ R_*
+$ENDFPLIST
+DRAW
+S -40 -100 40 100 0 1 10 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# PS_Test_Grid-rescue_CONN_01X01
+#
+DEF PS_Test_Grid-rescue_CONN_01X01 P 0 40 Y N 1 F N
+F0 "P" 0 100 50 H V C CNN
+F1 "PS_Test_Grid-rescue_CONN_01X01" 100 0 50 V V C CNN
+F2 "" 0 0 50 H V C CNN
+F3 "" 0 0 50 H V C CNN
+$FPLIST
+ Pin_Header_Straight_1X01
+ Pin_Header_Angled_1X01
+ Socket_Strip_Straight_1X01
+ Socket_Strip_Angled_1X01
 $ENDFPLIST
 DRAW
 S -50 5 10 -5 0 1 0 N
@@ -39,18 +56,18 @@ X P1 1 -200 0 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# CONN_01X03
+# PS_Test_Grid-rescue_CONN_01X03
 #
-DEF CONN_01X03 J 0 40 Y N 1 F N
-F0 "J" 0 200 50 H V C CNN
-F1 "CONN_01X03" 100 0 50 V V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
+DEF PS_Test_Grid-rescue_CONN_01X03 P 0 40 Y N 1 F N
+F0 "P" 0 200 50 H V C CNN
+F1 "PS_Test_Grid-rescue_CONN_01X03" 100 0 50 V V C CNN
+F2 "" 0 0 50 H V C CNN
+F3 "" 0 0 50 H V C CNN
 $FPLIST
- Pin_Header_Straight_1X*
- Pin_Header_Angled_1X*
- Socket_Strip_Straight_1X*
- Socket_Strip_Angled_1X*
+ Pin_Header_Straight_1X03
+ Pin_Header_Angled_1X03
+ Socket_Strip_Straight_1X03
+ Socket_Strip_Angled_1X03
 $ENDFPLIST
 DRAW
 S -50 -95 10 -105 0 1 0 N
@@ -63,37 +80,11 @@ X P3 3 -200 -100 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# GND
+# PS_Test_Grid-rescue_LED-RESCUE-PS_Test_Grid
 #
-DEF GND #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -250 50 H I C CNN
-F1 "GND" 0 -150 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
-X GND 1 0 0 0 D 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# GNDD
-#
-DEF GNDD #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -250 50 H I C CNN
-F1 "GNDD" 0 -150 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
-X GNDD 1 0 0 0 D 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# LED-RESCUE-PS_Test_Grid
-#
-DEF LED-RESCUE-PS_Test_Grid D 0 40 Y N 1 F N
+DEF PS_Test_Grid-rescue_LED-RESCUE-PS_Test_Grid D 0 40 Y N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "LED-RESCUE-PS_Test_Grid" 0 -100 50 H V C CNN
+F1 "PS_Test_Grid-rescue_LED-RESCUE-PS_Test_Grid" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H V C CNN
 F3 "" 0 0 50 H V C CNN
 $FPLIST
@@ -115,11 +106,11 @@ X A 2 200 0 150 L 40 40 1 1 P
 ENDDRAW
 ENDDEF
 #
-# MCP6001R-RESCUE-PS_Test_Grid
+# PS_Test_Grid-rescue_MCP6001R-RESCUE-PS_Test_Grid
 #
-DEF MCP6001R-RESCUE-PS_Test_Grid U 0 20 Y Y 1 F N
+DEF PS_Test_Grid-rescue_MCP6001R-RESCUE-PS_Test_Grid U 0 20 Y Y 1 F N
 F0 "U" 50 200 50 H V C CNN
-F1 "MCP6001R-RESCUE-PS_Test_Grid" 200 -200 50 H V C CNN
+F1 "PS_Test_Grid-rescue_MCP6001R-RESCUE-PS_Test_Grid" 200 -200 50 H V C CNN
 F2 "" -50 100 50 H V C CNN
 F3 "" 50 200 50 H V C CNN
 DRAW
@@ -132,11 +123,11 @@ X V- 5 -100 -300 150 U 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# NOA1212
+# Solutions_NOA1212
 #
-DEF NOA1212 U 0 40 Y Y 1 F N
+DEF Solutions_NOA1212 U 0 40 Y Y 1 F N
 F0 "U" 200 250 60 H V C CNN
-F1 "NOA1212" -250 -250 60 H V C CNN
+F1 "Solutions_NOA1212" -250 -250 60 H V C CNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 DRAW
@@ -150,11 +141,11 @@ X OUT 6 400 0 100 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# PhotoTransistor
+# Solutions_PhotoTransistor
 #
-DEF PhotoTransistor Q 0 40 Y Y 1 F N
+DEF Solutions_PhotoTransistor Q 0 40 Y Y 1 F N
 F0 "Q" 200 150 60 H V C CNN
-F1 "PhotoTransistor" 550 0 60 H V C CNN
+F1 "Solutions_PhotoTransistor" 550 0 60 H V C CNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 DRAW
@@ -168,29 +159,38 @@ X E 2 100 -200 100 U 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# R
+# power_GND
 #
-DEF R R 0 0 N Y 1 F N
-F0 "R" 80 0 50 V V C CNN
-F1 "R" 0 0 50 V V C CNN
-F2 "" -70 0 50 V I C CNN
+DEF power_GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
-$FPLIST
- R_*
- R_*
-$ENDFPLIST
 DRAW
-S -40 -100 40 100 0 1 10 N
-X ~ 1 0 150 50 D 50 50 1 1 P
-X ~ 2 0 -150 50 U 50 50 1 1 P
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# VDD
+# power_GNDD
 #
-DEF VDD #PWR 0 0 Y Y 1 F P
+DEF power_GNDD #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GNDD" 0 -125 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -50 -60 50 -80 0 1 10 F
+P 2 0 1 0 0 0 0 -60 N
+X GNDD 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_VDD
+#
+DEF power_VDD #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "VDD" 0 150 50 H V C CNN
+F1 "power_VDD" 0 150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -200,11 +200,11 @@ X VDD 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# VPP
+# power_VPP
 #
-DEF VPP #PWR 0 0 Y Y 1 F P
+DEF power_VPP #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "VPP" 0 150 50 H V C CNN
+F1 "power_VPP" 0 150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW

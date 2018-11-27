@@ -1,0 +1,65 @@
+Info: Backing up file “/Users/biomurph/Documents/KiCad/PS_Test_Grid/sym-lib-table” to file “/Users/biomurph/Documents/KiCad/PS_Test_Grid/rescue-backup/sym-lib-table-2018-11-27-15-48-22”.
+Info: Backing up file “/Users/biomurph/Documents/KiCad/PS_Test_Grid/PS_Test_Grid.sch” to file “/Users/biomurph/Documents/KiCad/PS_Test_Grid/rescue-backup/PS_Test_Grid-2018-11-27-15-48-22.sch”.
+Info: Backing up file “/Users/biomurph/Documents/KiCad/PS_Test_Grid/PS_Test_Grid.pro” to file “/Users/biomurph/Documents/KiCad/PS_Test_Grid/rescue-backup/PS_Test_Grid-2018-11-27-15-48-22.pro”.
+Info: Backing up file “/Users/biomurph/Documents/KiCad/PS_Test_Grid/PS_Test_Grid-cache.lib” to file “/Users/biomurph/Documents/KiCad/PS_Test_Grid/rescue-backup/PS_Test_Grid-cache-2018-11-27-15-48-22.lib”.
+Info: Backing up file “/Users/biomurph/Documents/KiCad/PS_Test_Grid/PS_Test_Grid-rescue.lib” to file “/Users/biomurph/Documents/KiCad/PS_Test_Grid/rescue-backup/PS_Test_Grid-rescue-2018-11-27-15-48-22.lib”.
+Info: Backing up file “/Users/biomurph/Documents/KiCad/PS_Test_Grid/PS_Test_Grid-rescue.dcm” to file “/Users/biomurph/Documents/KiCad/PS_Test_Grid/rescue-backup/PS_Test_Grid-rescue-2018-11-27-15-48-22.dcm”.
+Info: Adding library “PS_Test_Grid-rescue”, file “${KIPRJMOD}/PS_Test_Grid-rescue.lib” to project symbol library table.
+Info: Adding library “Solutions”, file “/Users/biomurph/Documents/KiCad/library/Solutions.lib” to project symbol library table.
+Symbol “PhotoTransistor” mapped to symbol library “Solutions”.
+Symbol “NOA1212” mapped to symbol library “Solutions”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “MCP6001R-RESCUE-PS_Test_Grid” mapped to symbol library “PS_Test_Grid-rescue”.
+Symbol “VDD” mapped to symbol library “power”.
+Symbol “GND” mapped to symbol library “power”.
+Symbol “LED-RESCUE-PS_Test_Grid” mapped to symbol library “PS_Test_Grid-rescue”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “LED-RESCUE-PS_Test_Grid” mapped to symbol library “PS_Test_Grid-rescue”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “MCP6001R-RESCUE-PS_Test_Grid” mapped to symbol library “PS_Test_Grid-rescue”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “VPP” mapped to symbol library “power”.
+Symbol “GNDD” mapped to symbol library “power”.
+Symbol “CONN_01X03” mapped to symbol library “PS_Test_Grid-rescue”.
+Symbol “CONN_01X03” mapped to symbol library “PS_Test_Grid-rescue”.
+Symbol “CONN_01X01” mapped to symbol library “PS_Test_Grid-rescue”.
+Symbol “CONN_01X01” mapped to symbol library “PS_Test_Grid-rescue”.
+Symbol “CONN_01X01” mapped to symbol library “PS_Test_Grid-rescue”.
+Symbol “CONN_01X01” mapped to symbol library “PS_Test_Grid-rescue”.
+Symbol “GND” mapped to symbol library “power”.
+Symbol “CONN_01X01” mapped to symbol library “PS_Test_Grid-rescue”.
+Symbol “CONN_01X01” mapped to symbol library “PS_Test_Grid-rescue”.
+Symbol “CONN_01X01” mapped to symbol library “PS_Test_Grid-rescue”.
+Symbol “CONN_01X01” mapped to symbol library “PS_Test_Grid-rescue”.
+Symbol “GNDD” mapped to symbol library “power”.
+Info: Symbol library table mapping complete!
