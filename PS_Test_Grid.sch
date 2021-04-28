@@ -1137,4 +1137,6 @@ Wire Wire Line
 Connection ~ 12450 7700
 Wire Wire Line
 	12450 7700 12850 7700
+Text Notes 6100 4700 0    50   ~ 0
+Don’t need C5 or C12 to cut 60Hz noise\nLikely don’t need output C or R 
 $EndSCHEMATC
